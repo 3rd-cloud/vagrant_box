@@ -8,7 +8,7 @@ set BOX_FULL_NAME=private/%BOX_NAME%
 rem ---------------------------------------------
 
 rem current directory
-cd %~dp0%BOX_NAME%
+cd %~dp0
 
 rem args check
 if "%BOX_NAME%"=="" (
@@ -18,7 +18,7 @@ if "%BOX_NAME%"=="" (
 
 rem box name vagrantfile exist check
 if not exist Vagrantfile (
-    echo Error : %BOX_NAME%\Vagrantfile is not found.
+    echo Error : Vagrantfile is not found.
     exit /b 0
 )
 
